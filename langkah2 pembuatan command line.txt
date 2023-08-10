@@ -1,0 +1,14 @@
+server:
+npm init -y
+npm install express pg sequelize
+npm install sequelize cli nodemon --save-dev
+npx sequelize-cli init(untuk init sequelize)
+npx sequelize-cli model:generate--name item --attributes name:string,type:string,price:integer,stock:integer
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate
+//code app.js
+
+
+client:
+npx create-react-app .
+npm install axios sweetalert2
